@@ -2,15 +2,25 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Weather Map
+    link(href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css')
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+    #controls
+      h1 Weather Map
+      input#location(type='text', placeholder='Zip Code', autofocus=true)
+      button#add Get Weather
+    #map
+    #graphs
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
     script(src='./js/vendor/jquery-2.1.0.js')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
+    script(src='http://www.amcharts.com/lib/3/amcharts.js')
+    script(src='http://www.amcharts.com/lib/3/serial.js')
+    script(src='http://www.amcharts.com/lib/3/themes/dark.js')
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCAiWQZ1y3ygueZEtxg4SGLKQSjUgKoRtA&sensor=true')
     script(src='./js/es5/main.js')
     script(src='./js/es6/main.js')
